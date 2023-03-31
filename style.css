@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d182a;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+}
+
+.container{
+    height: 522px;
+    width: 323px;
+    background-color: #15253e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #0c1827;
+    padding: 25px;
+}
+
+.nft{
+    height: 270px;
+    width: 270px;
+    margin: auto;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.nft img{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    z-index: 2;
+    position: absolute;
+}
+
+.hover{
+    height: 270px;
+    width: 271px;
+    margin: auto;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hover:hover{   
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 48px;
+    border-radius: 8px;
+    background-color: rgba(0, 255, 247, 0.5);
+    transition: all 0.3s ;
+}
+
+.title{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.title:hover{    
+    color: hsl(178, 100%, 50%);
+}
+
+.text{
+    font-weight: 300;   
+}
+
+.bottom1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    height: 18px;
+}
+
+.icon1{
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    
+}
+
+.eth{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 18px;
+    font-weight: 700;
+    color: hsl(178, 100%, 50%);
+}
+
+.icon2{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    right: 80px;
+}
+
+.daysleft{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-weight: 300;
+}
+
+.hr{
+    background-color: hsl(215, 32%, 27%);
+    height: 0.1px;
+}
+
+.bottom2{
+    margin-top: 16px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 0.2px solid white;
+}
+
+.profile{
+    display: inline;
+}
+
+.creation{
+    font-weight: 300;
+    margin-left: 12px;
+
+}
+
+.name{
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.name:hover{    
+    color: hsl(178, 100%, 50%);
+}
+
+footer{
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+a{
+    text-decoration:underline;
+    color: hsl(216, 22%, 47%)
+}
+
+@media (max-height: 590px){
+    footer{
+        display: none;
+    }
+}
